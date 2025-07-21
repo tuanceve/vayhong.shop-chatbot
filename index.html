@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat with Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat@latest/dist/style.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="chat-root"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@n8n/chat@latest/dist/chat.bundle.iife.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      n8nChat.createChat({
+        webhookUrl: "https://vayhong1.app.n8n.cloud/webhook/e53c9162-b390-43b2-8133-d63b40787dc9/chat"
+      });
+    });
+  </script>
+</body>
+</html>
 
